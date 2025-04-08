@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOOR - Premium Shopping Experience</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <link rel="stylesheet" href="styles/animations.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <div class="logo-container">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-text">LOOR</span>
+
+                </a>
+
+            </div>
+
+            
+
+            <div class="search-container">
+
+                <form id="search-form">
+
+                    <input type="text" id="search-input" placeholder="Search products...">
+
+                    <button type="submit" id="search-button">
+
+                        <i class="fas fa-search"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            
+
+            <nav class="main-nav">
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="#categories">Categories</a></li>
+
+                    <li><a href="pages/seller/login.html">Sellers</a></li>
+
+                    <li class="cart-icon">
+
+                        <a href="pages/cart.html">
+
+                            <i class="fas fa-shopping-cart"></i>
+
+                            <span id="cart-count">0</span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="user-account">
+
+                        <a href="#" id="account-dropdown-toggle">
+
+                            <i class="fas fa-user"></i>
+
+                        </a>
+
+                        <div class="account-dropdown">
+
+                            <a href="pages/login.html">Login</a>
+
+                            <a href="pages/register.html">Register</a>
+
+                            <a href="pages/admin/login.html">Admin</a>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="mobile-menu-toggle">
+
+                    <i class="fas fa-bars"></i>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-menu">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="#categories">Categories</a></li>
+
+            <li><a href="pages/seller/login.html">Sellers</a></li>
+
+            <li><a href="pages/cart.html">Cart</a></li>
+
+            <li><a href="pages/login.html">Login</a></li>
+
+        </ul>
+
+    </div>
+
+    <main>
+
+        <section class="hero-section">
+
+            <div class="hero-content">
+
+                <h1>Discover Premium Products</h1>
+
+                <p>Experience the luxury of LOOR, where quality meets innovation.</p>
+
+                <a href="#featured-products" class="cta-button">Shop Now</a>
+
+            </div>
+
+        </section>
+
+        <section id="categories" class="categories-section">
+
+            <div class="section-header">
+
+                <h2>Categories</h2>
+
+            </div>
+
+            <div class="categories-grid" id="categories-container">
+
+                <!-- Categories will be loaded dynamically -->
+
+                <div class="category-loading">Loading categories...</div>
+
+            </div>
+
+        </section>
+
+        <section id="featured-products" class="featured-section">
+
+            <div class="section-header">
+
+                <h2>Featured Products</h2>
+
+            </div>
+
+            <div class="products-grid" id="featured-products-container">
+
+                <!-- Products will be loaded dynamically -->
+
+                <div class="product-loading">Loading products...</div>
+
+            </div>
+
+        </section>
+
+        <section class="new-arrivals-section">
+
+            <div class="section-header">
+
+                <h2>New Arrivals</h2>
+
+            </div>
+
+            <div class="products-grid" id="new-arrivals-container">
+
+                <!-- Products will be loaded dynamically -->
+
+                <div class="product-loading">Loading products...</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+
+                <h3>LOOR</h3>
+
+                <p>Premium shopping experience for discerning customers.</p>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="pages/about.html">About LOOR</a></li>
+
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+
+                    <li><a href="pages/terms.html">Terms & Conditions</a></li>
+
+                    <li><a href="pages/privacy.html">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Connect With Us</h3>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Subscribe</h3>
+
+                <form class="newsletter-form">
+
+                    <input type="email" placeholder="Your email address">
+
+                    <button type="submit">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2025 LOOR. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/utils.js"></script>
+
+    <script src="scripts/products.js"></script>
+
+    <script src="scripts/cart.js"></script>
+
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>
